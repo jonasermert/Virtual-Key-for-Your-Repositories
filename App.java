@@ -4,11 +4,11 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- *  author: jonas Ermert
- *  exception: NumberFormatException
- *  version: 1.0
- *  since: 1.0
- *  return: retun a mainmenu on the console
+ *  @author: jonas Ermert
+ *  @exception: NumberFormatException
+ *  @version: 1.0
+ *  @since: 1.0
+ *  @return: retun a mainmenu on the console
  */
 
 public class VirtualKeyMain {
