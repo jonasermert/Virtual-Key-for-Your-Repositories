@@ -4,6 +4,13 @@ import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * author: Jonas Ermert
+ * since: 1.0
+ * version: 1.0
+ * return: Implementation für FileManager Interface
+ */
+
 public class FileManagerBOImpl implements FileManagerBO {
     private File root;
 
@@ -29,8 +36,8 @@ public class FileManagerBOImpl implements FileManagerBO {
             }
         }
         String path = root.getAbsolutePath();
-        File newFIle = new File(path + "\\" + name);
-        newFIle.createNewFile();
+        File newFile = new File(path + "\\" + name);
+        newFile.createNewFile();
         return new FileDetail(newFIle.getName(), newFIle.getParent(), newFIle.length(), newFIle.getPath());
 
     }
@@ -43,7 +50,7 @@ public class FileManagerBOImpl implements FileManagerBO {
             throw new FileNameNotFoundException(name);
         }
         if (fileToDelete.exists()) {
-            return fIleToDelete.delete();
+            return fileToDelete.delete();
         } else {
             throw new FileNameNotFoundException(name);
         }

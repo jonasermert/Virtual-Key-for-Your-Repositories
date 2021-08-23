@@ -3,6 +3,14 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ *  author: jonas Ermert
+ *  exception: NumberFormatException
+ *  version: 1.0
+ *  since: 1.0
+ *  return: retun a mainmenu on the console
+ */
+
 public class VirtualKeyMain {
 
     public static void main(String[] args) {
@@ -37,6 +45,7 @@ public class VirtualKeyMain {
                     String headers = String.format("%-50s | %-10s | %-50s | %s", "Name", "Length", "Parent", "Path");
                     System.out.println(headers);
 
+                    //
                     List<FileDetail> Files = FileManager.getAllFiles();
                     Collections.sort(Files);
                     for (FileDetail filedetail : Files) {
@@ -58,12 +67,18 @@ public class VirtualKeyMain {
                         System.out.println("-------------------------");
                         System.out.print("Enter your choice: ");
 
+
+
+                        // Check if the user typed in a number
                         try {
                             ch = Integer.parseInt(scanner.nextLine());
                         } catch (NumberFormatException e) {
                             System.out.println("only numbers allowed");
                             continue;
                         }
+
+
+
                         System.out.println("-------------------------");
                         System.out.println();
                         System.out.println();
