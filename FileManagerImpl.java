@@ -5,10 +5,10 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * author: Jonas Ermert
- * since: 1.0
- * version: 1.0
- * return: Implementation für FileManager Interface
+ * @author: Jonas Ermert
+ * @since: 1.0
+ * @version: 1.0
+ * @return: Implementation für FileManager Interface
  */
 
 public class FileManagerBOImpl implements FileManagerBO {
