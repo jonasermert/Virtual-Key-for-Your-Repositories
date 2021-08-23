@@ -38,11 +38,11 @@ public class FileManagerBOImpl implements FileManagerBO {
     @Override
     public boolean deleteFile(String name) throws FileNameNotFoundException {
         String path = root.getAbsolutePath();
-        File fIleToDelete = new File(path + "\\" + name);
-        if(!fIleToDelete.exists()) {
+        File fileToDelete = new File(path + "\\" + name);
+        if(!fileToDelete.exists()) {
             throw new FileNameNotFoundException(name);
         }
-        if (fIleToDelete.exists()) {
+        if (fileToDelete.exists()) {
             return fIleToDelete.delete();
         } else {
             throw new FileNameNotFoundException(name);
@@ -64,8 +64,8 @@ public class FileManagerBOImpl implements FileManagerBO {
     @Override
     public boolean searchFile(String name) {
         String path = root.getAbsolutePath();
-        File fIleToSearch = new File(path + "\\" + name);
-        return fIleToSearch.exists();
+        File fileToSearch = new File(path + "\\" + name);
+        return fileToSearch.exists();
     }
 
 }
