@@ -3,7 +3,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
-public class VitualKeyMain {
+public class VirtualKeyMain {
 
     public static void main(String[] args) {
         System.out.println("Welcome to Virtual Key for Your Repositories");
