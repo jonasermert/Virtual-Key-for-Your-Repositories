@@ -13,7 +13,7 @@ public class VirtualKeyMain {
         System.out.println("Application Name: Console File Manager");
         System.out.println("Developer Name: Jonas Ermert");
         System.out.println("2021");
-        System.out.println("Simplilearn");
+        System.out.println("A Simplilearn Project");
         do {
             System.out.println("File Menu");
             System.out.println("-------------------------");
